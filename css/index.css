@@ -303,3 +303,85 @@ nav {
 #contact h2 {
   color: #fbfffb;
 }
+
+/* Responsive Styles*/
+
+/* max-width scales down - desktop first */
+/* max-width scales up - mobile first */
+
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 500px){
+    nav{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .logo{
+      width: 30%;
+    }
+
+    .links{
+      width:80%;
+      
+    }
+
+    /* About Section Styles */
+
+    #about{
+      background-image:none;
+      background-color: #e0e1e3;
+      justify-content: center;
+      height: auto;
+    }
+
+    #about .about-text{
+      margin:0;
+      width: 80%;
+    }
+
+    /* Shop Section Styles */
+    
+    .container{
+      justify-content: center;
+    }
+
+    .bgImg{
+      height: 60vh;
+    }
+
+    .shopText, .bgImg{
+      width: 90%;
+    }
+
+    .shopText{
+      padding: 5% 0;
+    }
+
+    .one{
+      order:0;
+    }
+
+    .two{
+      order: 1;
+    }
+
+    .three{
+      order: 2;
+    }
+
+    .four{
+      order:3;
+    }
+
+    .five{
+      order: 4;
+    }
+
+    .six{
+      order:5;
+    }
+
+}
