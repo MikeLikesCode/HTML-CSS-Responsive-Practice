@@ -161,6 +161,11 @@ nav {
   transition: 2ms;
 }
 
+.titles button:hover{
+  color:#FBFFFB;
+  background-color:#266035;
+}
+
 /*About Section Styles*/
 
 #about {
@@ -194,6 +199,12 @@ nav {
   background-color: #266035;
   color: white;
   font-size: 2rem;
+  transition: 2ms;
+}
+
+#shop button:hover{
+  color:white;
+  background-color:#577760;
 }
 
 .container {
