@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Styles*/
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #fbfffb;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #4f4f4f;
+}
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  color: #266035;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  color: #266035;
+}
+h1 {
+  color: #fbfffb;
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+section {
+  padding: 1% 0;
+}
+
+button {
+  border: 0;
+  padding: 3% 7%;
+  color: #266035;
+  font-size: 2.3rem;
+  margin-top: 8%;
+}
+
+/* Header Styles */
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 5%;
+  background-color: rgba(255, 255, 255, 0.816);
+}
+
+.logo {
+  width: 10%;
+}
+
+.logo img{
+  width: 50%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 25%;
+}
+
+.links a {
+  font-size: 2rem;
+}
+
+/* Top Section Styles */
+
+#top {
+  position: relative;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.titles {
+  text-align: center;
+}
+
+.titles button {
+  background-color: white;
+  transition: 2ms;
+}
+
+/*About Section Styles*/
+
+#about {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../images/about-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 12% 0;
+}
+
+.about-text {
+  width: 25%;
+  margin-right: 10%;
+  padding: 4%;
+}
+
+/*Shop Section Styles*/
+
+#shop {
+  padding-bottom: 0px;
+}
+
+#shop h2 {
+  margin: 4% 0;
+  font-size: 4rem;
+}
+
+#shop button {
+  background-color: #266035;
+  color: white;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopText {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopText div {
+  width: 50%;
+  text-align: center;
+}
+.bgImg {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+.succulants {
+  background-image: url("../images/succulants.jpg");
+}
+.cacti {
+  background-image: url("../images/cacti.jpg");
+}
+.tropicals {
+  background-image: url("../images/tropicals.jpg");
+}
+
+/*Footer Styles*/
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fbfffb;
+  background-color: #266035;
+}
+#contact h2 {
+  font-size: 4rem;
+  margin: 4% 0;
+  width: 100%;
+}
+#contact p.copyright {
+  width: 100%;
+  text-align: right;
+  margin-right: 10%;
+}
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.right img {
+  width: 45%;
+}
+.left div {
+  width: 40%;
+  line-height: 2;
+}
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 1%;
+}
+#contact h3 {
+  font-size: 3rem;
+  text-align: left;
+  color: #fbfffb;
+  margin: 0 0 10% 0;
+}
+#contact a {
+  color: #fbfffb;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+#contact address {
+  color: #fbfffb;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+#contact p {
+  color: #fbfffb;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+#contact h2 {
+  color: #fbfffb;
+}
